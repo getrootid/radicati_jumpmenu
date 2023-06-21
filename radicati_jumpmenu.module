@@ -1,0 +1,37 @@
+<?php
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_theme().
+ */
+function radicati_jumpmenu_theme()
+{
+  return [
+    'radicati_jumpmenu' => [
+      'render element' => 'children',
+      'variables' => [
+        'menu' => NULL,
+        'items' => NULL,
+        'attributes' => NULL
+      ]
+    ],
+    'radicati_jumpmenu__menu' => [
+      'render element' => 'children',
+      'variables' => [
+        'menu_items' => NULL,
+        'ids' => NULL,
+        'attributes' => NULL
+      ]
+    ],
+    'radicati_jumpmenu__item' => [
+      'render element' => 'children',
+      'variables' => [
+        'attributes' => NULL,
+        'item' => NULL,
+      ]
+    ]
+  ];
+}

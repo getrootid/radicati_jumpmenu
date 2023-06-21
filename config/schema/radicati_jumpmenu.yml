@@ -1,0 +1,12 @@
+field.formatter.settings.radicati_jumpmenu:
+  type: mapping
+  label: "Jump Menu Settings"
+  mapping:
+    jumpmenu_title:
+      type: string
+      label: "Jump Menu Title Field"
+      default_value: ""
+    jumpmenu_content:
+      type: string
+      label: "Jump Menu Content Field"
+      default_value: ""

@@ -1,0 +1,9 @@
+<nav {{ attributes }}>
+  <ul class="radicati-jumpmenu__menu">
+    {% for key,item in menu_items %}
+      <li class="radicati-jumpmenu__menu-item">
+        <a class="radicati-jumpmenu__link" href="#{{ ids[key] }}" role="tab">{{ item }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

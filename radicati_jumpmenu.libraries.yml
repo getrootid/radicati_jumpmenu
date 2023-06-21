@@ -1,0 +1,26 @@
+jumpmenu:
+  version: VERSION
+  js:
+    dist/js/jumpmenu.js: {}
+  css:
+    theme:
+      dist/css/jumpmenu.css: {}
+  dependencies:
+    - core/once
+    - radicati_jumpmenu/stickybits
+    - radicati_jumpmenu/gumshoe
+
+stickybits:
+  version: 3.7
+  js:
+    /libraries/stickybits/dist/stickybits.min.js: { minified: true }
+    /libraries/stickybits/dist/jquery.stickybits.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/once
+
+gumshoe:
+  version: 5.1.1
+  js:
+    /libraries/gumshoe/dist/gumshoe.min.js: {minified: true}

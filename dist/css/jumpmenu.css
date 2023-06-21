@@ -1,0 +1,30 @@
+.radicati-jumpmenu {
+  position: relative;
+}
+
+.radicati-jumpmenu__menu-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.radicati-jumpmenu__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.radicati-jumpmenu__menu-item {
+  flex: 0 1 150px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: lightblue;
+}
+
+.radicati-jumpmenu__link {
+  text-decoration: none;
+  color: #000;
+}
