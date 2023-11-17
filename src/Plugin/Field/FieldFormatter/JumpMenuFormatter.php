@@ -19,7 +19,8 @@ use Drupal\Core\Form\FormStateInterface;
  *   id = "radicati_jumpmenu",
  *   label = @Translation("Jump Menu"),
  *   field_types = {
- *     "entity_reference_revisions"
+ *     "entity_reference_revisions",
+ *     "entity_reference"
  *   }
  * )
  */
@@ -27,9 +28,9 @@ class JumpMenuFormatter extends FormatterBase {
 
   public static function defaultSettings() {
     return [
-      'title_field' => '',
-      'content_field' => '',
-    ] + parent::defaultSettings();
+        'title_field' => '',
+        'content_field' => '',
+      ] + parent::defaultSettings();
   }
 
   public function viewElements(FieldItemListInterface $items, $langcode) {
@@ -128,7 +129,7 @@ class JumpMenuFormatter extends FormatterBase {
     return $form;
   }
 
-  
+
 
   public function settingsSummary() {
     $summary = [];
