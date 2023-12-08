@@ -1,7 +1,7 @@
 name: "Radicati: Jump Menu"
 type: module
 description: "Provides a snazzy jump menu based on Layout Builder."
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: "radicati"
 
 dependencies:
